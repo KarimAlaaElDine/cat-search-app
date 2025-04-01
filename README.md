@@ -1,7 +1,5 @@
 # Cat Similarity Search using FAISS and CNNs
 
-![Test and Deploy](https://github.com/KarimAlaaElDine/solar-energy-pred/actions/workflows/docker-push-image.yml/badge.svg)
-
 This projects makes use of Vector databses (**FAISS**) and a CNN trained on cat breed classification to create embeddings that are used to find similar looking cats. 
 
 The CNN uses **EfficientNetV2L** as a backbone with a custom head to classify 5 breeds of cats, the final layer is removed and the layer before it is used to create 128D embedding of the cat images. These embeddings are then stored on the vector database to be used for similarity search.
